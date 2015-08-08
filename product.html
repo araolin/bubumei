@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
     <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+    <link href='css/slide.css' rel='stylesheet' type='text/css'>
     <!-- Set render engine for 360 browser -->
     <meta name="renderer" content="webkit">
     <!-- No Baidu Siteapp-->
@@ -80,36 +81,59 @@
 </header>
 <div class="clear"></div>
 <div class="content">
-    <section class="page1 product-pic">
-        <img src="images/product.jpg" alt="">
+    <section id="slider_wrapper">
+
+        <div id="slider" class="divas-slider">
+
+            <ul class="divas-slide-container">
+                <li class="divas-slide"><img src="images/placeholder.gif" alt="" data-src="http://www.zhenzun168.com/images/pro/01.jpg" data-title="<h1>Divas Slider</h1><p>Images use lazy loading via deferred object</p>"/></li>
+                <li class="divas-slide"><img src="images/placeholder.gif" alt="" data-src="http://www.zhenzun168.com/images/pro/02.jpg" data-title="<h1>Divas Slider</h1><p>You can style it as you wish via CSS</p>"/></li>
+                <li class="divas-slide"><img src="images/placeholder.gif" alt="" data-src="http://www.zhenzun168.com/images/pro/03.jpg" data-title="<h1>Divas Slider</h1><p>Uses CSS3 transitions or jQuery.animate() as a fallback</p>" /></li>
+                <li class="divas-slide"><img src="images/placeholder.gif" alt="" data-src="http://www.zhenzun168.com/images/pro/01.jpg" data-title="<h1>Divas Slider</h1><p>You can set up almost any slider style your desire</p>" /></li>
+                <li class="divas-slide"><img src="images/placeholder.gif" alt="" data-src="http://www.zhenzun168.com/images/pro/02.jpg" data-title="<h1>Divas Slider</h1><p>Gives you extensive documentation and friendly support</p>" /></li>
+            </ul>
+
+            <div class="divas-navigation">
+                <span class="divas-prev">&nbsp;</span>
+                <span class="divas-next">&nbsp;</span>
+            </div>
+
+            <div class="divas-controls">
+                <span class="divas-start"><i class="fa fa-play"></i></span>
+                <span class="divas-stop"><i class="fa fa-pause"></i></span>
+            </div>
+
+        </div>
+
     </section>
-    <section class="page2 product-pic">
-        <img src="http://shared.ydstatic.com/website/images/groupintro/head-bg.png" alt="">
-    </section>
-    <section class="page3 product-pic">
-        <img src="http://www.zhenzun168.com/images/pro/02.jpg" alt="">
-    </section>
-    <section class="page4 product-pic">
-        <img src="http://www.zhenzun168.com/images/pro/04.jpg" alt="">
-    </section>
-    <section class="page5 product-pic">
-        <img src="images/product.jpg" alt="">
-    </section>
-    <section class="page6 product-pic">
-        <img src="http://shared.ydstatic.com/website/images/groupintro/head-bg.png" alt="">
-    </section>
+
 </div>
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
-<script>
+<script type="text/javascript" src="js/jquery.divas-1.0.min.js"></script>
+<script type="text/javascript">
     $(document).ready(function(){
-        $(".content").onepage_scroll({
-            sectionContainer: "section",
-            responsiveFallback: 600,
-            loop: true
+
+        $("#slider").divas({
+            slideTransitionClass: "divas-slide-transition-left",
+            titleTransitionClass: "divas-title-transition-left",
+            titleTransitionParameter: "left",
+            titleTransitionStartValue: "-999px",
+            titleTransitionStopValue: "0px",
+            wingsOverlayColor: "rgba(0,0,0,0.6)"
         });
+
     });
 </script>
+<!--<script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>-->
+<!--<script>-->
+    <!--$(document).ready(function(){-->
+        <!--$(".content").onepage_scroll({-->
+            <!--sectionContainer: "section",-->
+            <!--responsiveFallback: 600,-->
+            <!--loop: true-->
+        <!--});-->
+    <!--});-->
+<!--</script>-->
 
 
 </body>
