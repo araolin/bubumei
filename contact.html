@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>步步美印务官网</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5.js"></script>
+    <div id="browser_ie">
+        <div class="brower_info">
+            <div class="notice_info"><p>你的浏览器版本过低，可能导致网站不能正常访问！<br>为了你能正常使用网站功能，请使用这些浏览器。</p>
+            </div>
+            <div class="browser_list">
+                    <span>
+                        <a href="http://www.google.cn/chrome/" target="_blank">
+                            <img src="images/Chrome.png?v=1"><br>Chrome
+                        </a>
+                    </span>
+                    <span>
+                        <a href="http://www.firefox.com.cn/" target="_blank">
+                            <img src="images/Firefox.png?v=1"><br>Firefox
+                        </a>
+                    </span>
+                    <span>
+                        <a href="https://www.apple.com/cn/support/mac-apps/safari/" target="_blank">
+                            <img src="images/Safari.png?v=1"><br>Safari
+                        </a>
+                    </span>
+                    <span>
+                        <a href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie" target="_blank">
+                            <img src="images/IE.png?v=1"><br>IE9及以上
+                        </a>
+                    </span>
+            </div>
+        </div>
+    </div>
+    <![endif]-->
+</head>
+<body id="contact">
+<header class="header">
+    <div class="logo">
+        <ul>
+            <li class="logo_l"><a href="index.html"><img src="images/logo-l.png" alt="步步美logo"></a></li>
+            <li class="logo_r"><img src="images/logo-r.png" /></li>
+        </ul>
+    </div>
+    <nav class="nav">
+        <ul>
+            <li class="nav_i icon_nav1"><i></i><a href="factory.html"><em></em><p>厂区展示</p></a></li>
+            <li class="nav_i icon_nav2"><i></i><a href="news.html"><em></em><p>行业动态</p></a></li>
+            <li class="nav_i icon_nav3"><i></i><a href="brand.html"><em></em><p>合作品牌</p></a></li>
+            <li class="nav_i icon_nav4"><i></i><a href="product.html"><em></em><p>产品展示</p></a>
+                <div class="second_nav">
+                    <ul>
+                        <li><em></em><a href="#">产品包装</a></li>
+                        <li><em></em><a href="#">封套/手袋</a></li>
+                        <li><em></em><a href="#">出版物</a></li>
+                        <li><em></em><a href="#">艺术画册</a></li>
+                        <li><em></em><a href="#">高端名片</a></li>
+                        <li><em></em><a href="#">异性宣传品</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav_i icon_nav5"><i></i><a href="service.html"><em></em><p>客户服务</p></a></li>
+            <li class="nav_i icon_nav6"><i></i><a href="bbs.html"><em></em><p>员工论坛</p></a></li>
+            <li class="nav_i icon_nav7 active"><i></i><a href="contact.html"><em class="active"></em><p>联系我们</p></a></li>
+        </ul>
+    </nav>
+</header>
+<div class="clear"></div>
+<section class="content">
+    <section class="contact_con">
+        <section class="contact_l">
+            <article>
+                <h3>联系我们 / CONTACT US</h3>
+                <p>公司深知“步步美”快印品牌的建立与优质服务密不可分。为更有效地将“高品质，高效率”受诸客户，公司以快美快印为中心，在广州、珠三角等地建立起辐射状服务网，十几家营业网点以全天候的方式为客户提供更便捷的服务。通过业务队伍、电话、互联网及公司货运队编织的信息及物流网络将客户与快美印务的关系拉得更近、更紧密。快美品牌已走出广州，正向珠三角及更大的区域迈进。</p>
+            </article>
+            <section class="address">
+                <section class="address_con">
+                    <h4>广东潮安步步美印务有限公司</h4>
+                    <ul>
+                        <li><i class="addr"></i>清远市龙塘镇泰基工业城12号丰兆工业园17栋</li>
+                        <li><i class="tel"></i>020-12345676&nbsp;&nbsp;18618885888 </li>
+                        <li><i class="email"></i>bubumeiyinwu@163com</li>
+                    </ul>
+                </section>
+            </section>
+        </section>
+        <section class="contact_r" id="map"></section>
+        <div class="clear"></div>
+    </section>
+</section>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+
+        $(".contact_con article h3").addClass("animated bounceInDown").show();
+        setTimeout(function(){
+            $(".contact_con article p").addClass("animated rubberBand").show();
+
+        },1000);
+        setTimeout(function(){
+            $(".address .address_con").addClass("animated zoomInLeft").show();
+
+        },1800);
+        setTimeout(function(){
+            $(".contact_con .contact_r").addClass("animated fadeInLeftBig").show();
+
+        },2400);
+    })
+</script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=snyIHfM9yGT3OoEhEVvn5WLx"></script>
+<script type="text/javascript">
+
+        //创建和初始化地图函数：
+    function initMap() {
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+
+    //创建地图函数：
+    function createMap() {
+        var map = new BMap.Map("map");//在百度地图容器中创建一个地图
+
+        var point = new BMap.Point(113.146502,23.571088);//定义一个中心点坐标
+        map.centerAndZoom(point, 14);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent() {
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        //map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+
+    //地图控件添加函数：
+    function addMapControl() {
+        //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_LEFT, type: BMAP_NAVIGATION_CONTROL_LARGE });
+        map.addControl(ctrl_nav);
+    }
+
+    //标注点数组
+    var markerArr = [{ title: "广东潮安步步美印务有限公司", content: "广东潮安步步美印务有限公司", point: "113.146502|23.571088", isOpen: 1, icon: { w: 23, h: 25, l: 46, t: 21, x: 9, lb: 12 } }
+    ];
+    //创建marker
+    function addMarker() {
+        for (var i = 0; i < markerArr.length; i++) {
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0, p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point, { icon: iconImg });
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title, { "offset": new BMap.Size(json.icon.lb - json.icon.x + 10, -20) });
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                borderColor: "#808080",
+                color: "#333",
+                cursor: "pointer"
+            });
+
+            (function () {
+                var index = i;
+                var _iw = createInfoWindow(i);
+                var _marker = marker;
+                _marker.addEventListener("click", function () {
+                    this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open", function () {
+                    _marker.getLabel().hide();
+                })
+                _iw.addEventListener("close", function () {
+                    _marker.getLabel().show();
+                })
+                label.addEventListener("click", function () {
+                    _marker.openInfoWindow(_iw);
+                })
+                if (!!json.isOpen) {
+                    label.hide();
+                    _marker.openInfoWindow(_iw);
+                }
+            })()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i) {
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>" + json.content + "</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json) {
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w, json.h), { imageOffset: new BMap.Size(-json.l, -json.t), infoWindowOffset: new BMap.Size(json.lb + 5, 1), offset: new BMap.Size(json.x, json.h) })
+        return icon;
+    }
+
+    initMap();//创建和初始化地图
+</script>
+</body>
+</html>
