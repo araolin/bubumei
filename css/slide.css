@@ -316,13 +316,13 @@
 
 .divas-caption h1 {
 	font-weight: 900;
-	font-size: 4.8em;
+	font-size: 1.8em;
 	line-height: 1.1;
 }
 
 .divas-caption p {
 	font-style: italic;
-	font-size: 1.6em;
+	font-size: 1em;
 }
 
 /*
@@ -356,32 +356,5 @@
 
 
  
- /************************************************************************
- * 5. GENERAL media queries
- *************************************************************************/
- 
-@media screen and (max-width: 87.5em) {
-	body {
-		font-size: 54.6875%;
-	}
-}	
-
-@media screen and (max-width: 75em) {
-	body {
-		font-size: 50.875%;
-	}
-}	
-
-@media screen and (max-width: 56.75em) {
-	body {
-		font-size: 45%;
-	}
-}
-
-@media screen and (max-width: 35em) {
-	.divas-caption {
-		display: none;
-	}
-}
 
 
