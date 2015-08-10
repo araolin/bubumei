@@ -393,13 +393,29 @@ nav .second_nav li:first-child a:before{
     height: 100%;
 
 }
-.product-pic img{
-    position: absolute;
+#product .content span {
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    z-index: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
+#product .content img{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    outline: 0 none;
+}
+
 /* END 产品展示 */
 
 /* 联系我们 */
