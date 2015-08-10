@@ -21,18 +21,7 @@ $(function(){
         $(".cloud_b").addClass("animated bounceInRight").show();
 
     },2800);
-    /*点击切图*/
-    $(".plane").hover(function(){
-        if( $(".plane").hasClass("zoomInLeft")){
-            $(".plane").removeClass("zoomInLeft").addClass("zoomOutLeft");
-        }else{
-            $(".plane").removeClass("zoomInRight").addClass("zoomOutLeft");
-        }
 
-    })
-    $(".plane").mouseleave(function(){
-        $(".plane").removeClass("zoomOutLeft").addClass("zoomInRight");
-    })
     function tipsshow(b,t){
         $(b).hover(function(){
             $(t).show();
@@ -85,4 +74,16 @@ setInterval(function flutter() {
 
     $cloud2.css("background-position", offset2 + "px 115px")
 }, 70);
+
+sc_w=$(window).width();
+sc_h=$(window).height();
+    setInterval(function(){
+        var mm = Math.round(Math.random(0)*20)-10;
+        var nn = Math.round(Math.random(0)*20)-10;
+        if(sc_w>=1600){
+            $(".plane").animate({left:[1366+mm,"linear"],top:[30+nn,"swing"]},1000);
+        }else{
+            $(".plane").animate({left:[850+mm,"linear"],top:[30+nn,"swing"]},1000);
+        }
+    },50);
 
