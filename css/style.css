@@ -36,14 +36,7 @@ body {
     margin: 20px auto;
     position: relative;
 }
-.copyright{
-    width: 100%;
-    position: absolute;
-    color:#fff;
-    margin:60% 0 20px;
-    text-align: center;
-    font-size:.8rem;
-}
+
 /* END 公共样式 */
 /* 滚动条 */
 ::-webkit-scrollbar {
@@ -1379,42 +1372,5 @@ section.post {
     #contact .contact_r {
         height: 500px;
     }
-    .arrowButton .prevArrow{
-        top: 160px!important;
-    }
 }
 /* END 超大屏幕 */
-
-/* 产品页上下滚动 */
-.arrowButton{
-    cursor: pointer;
-}
-.arrowButton .prevArrow{
-    background: url(prev.png) no-repeat;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 105px;
-    margin-left:-20px;
-    left:50%;
-    z-index: 1004;
-}
-.arrowButton .nextArrow{
-    background: url(next.png) no-repeat;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    bottom: 20px;
-    margin-left:-20px;
-    left:50%;
-    z-index: 1004;
-}
-.item-container{
-    position: relative;
-    width: 100%;
-    display: none;
-}
-body#product{
-    background-color: rgba(0,0,0,0)!important;
-}
-/*  END 产品页上下滚动 */
