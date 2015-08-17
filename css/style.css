@@ -31,7 +31,7 @@ body {
     background-size: cover;
     z-index: 1;
 }
-.home_con,.contact_con,.bbs_con,.service_con,.news_con,.brand_con,.threads_con,.comments{
+.home_con,.contact_con,.bbs_con,.service_con,.news_con,.brand_con,.threads_con{
     width: 1070px;
     margin: 20px auto;
     position: relative;
@@ -365,6 +365,10 @@ nav .second_nav li:first-child a:before{
 #factory .content{
     width: 100%;
     height: 100%;
+    /*margin-top: -85px;*/
+    /*background-image: url('../images/factory-bg.jpg');*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
     background-color:#085e71;
     z-index: -1;
 }
@@ -373,7 +377,14 @@ nav .second_nav li:first-child a:before{
     width: 1070px;
     margin: 0 auto;
 }
-
+/*#factory .factory_con article{*/
+    /*width: 1070px;*/
+    /*position: fixed;*/
+    /*bottom: 50px;*/
+    /*color: #fff;*/
+    /*line-height: 1.9rem;*/
+    /*text-shadow: 1px 1px 2px #000000;*/
+/*}*/
 /* END 厂区展示 */
 
 /* 产品展示 */
@@ -683,11 +694,8 @@ nav .second_nav li:first-child a:before{
 /* END 员工论坛 */
 
 /* 帖子详情页 */
-section.post,section.comments_con {
-    background-color: #fff;
-}
 section.post {
-    padding-bottom: 40px;
+    background-color: #fff;
 }
 .post .entry-header {
     padding: 40px 0;
@@ -722,111 +730,10 @@ section.post {
     vertical-align: middle;
     background-color: #ddd;
 }
-.entry-content p{
+.entry-content p {
     margin: 8px 24px;
 }
-#threads .comments {
-    height: 240px;
-}
 /* END 帖子详情页 */
-
-/* 帖子评论 */
-.comments_con{
-    padding: 40px 24px;
-}
-.comment-respond .comment-reply-title, #comments-title {
-    margin: 0 0 20px;
-    color: #000;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-.comment .comment-container {
-    position: relative;
-    padding: 30px 0 20px 80px;
-    border-bottom: 1px dashed #e5e5e5;
-}
-.comment .comment-container {
-    padding: 10px 0 10px 80px;
-}
-.comment .comment-avatar {
-    position: absolute;
-    overflow: hidden;
-    top: 30px;
-    left: 0;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-}.comment .comment-avatar {
-     top: 10px;
- }
-.comment .comment-header {
-    margin: 0 0 10px;
-    color: #000;
-    font-size: 14px;
-    font-weight: bold;
-}
-.comment .comment-name a {
-    color: #000;
-}
-.comment .comment-date {
-    margin-left: 10px;
-    color: #bbb;
-    font-size: 12px;
-}
-.comment .comment-reply-link {
-    float: right;
-    color: #bbb;
-    font-size: 12px;
-}
-.comment .comment-content {
-    color: #666;
-    font-size: 14px;
-}
-.comment p {
-    margin-bottom: .75em;
-}
-.comments-list ol {
-    padding-left: 60px;
-}
-.comment-respond {
-    padding: 40px 0;
-}
-.comment .comment-respond {
-    margin-top: 0;
-    padding: 30px 0 20px 80px;
-    border-bottom: 1px dashed #e5e5e5;
-}
-.comment-respond .comment-reply-title small {
-    margin-left: 10px;
-    color: #bbb;
-    font-size: 12px;
-}
-.comment-respond .input-row {
-    margin: 10px 0;
-}
-.comment-respond textarea {
-    padding: 6px 8px;
-    background-color: #fff;
-    border-radius: 0;
-    border: 2px solid #e5e5e5;
-    color: #666;
-    font: inherit;
-    line-height: normal;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    box-sizing: border-box;
-}
-.comment-respond textarea {
-    max-width: 100%;
-    width: 100%;
-    resize: vertical;
-}
-#commentform #submit{
-    float: none;
-}
-/* END 帖子评论 */
 
 /* 客服服务 */
 #service .service_con{
