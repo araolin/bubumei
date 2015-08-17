@@ -80,37 +80,25 @@
 </header>
 <div class="clear"></div>
 <div class="content">
-    <section class="page1">
-        <span style="background-image: url(http://www.zhenzun168.com/images/pro/01.jpg)"></span>
-    </section>
-    <section class="page2">
-        <span style="background-image: url(http://www.zhenzun168.com/images/pro/02.jpg)"></span>
-    </section>
-    <section class="page3">
-        <span style="background-image: url(http://www.zhenzun168.com/images/pro/03.jpg)"></span>
-    </section>
-    <section class="page4">
-        <span style="background-image: url(http://www.zhenzun168.com/images/pro/04.jpg)"></span>
-    </section>
-    <section class="page5">
-        <span style="background-image: url(http://www.zhenzun168.com/images/pro/05.jpg)"></span>
-    </section>
-    <section class="page6">
-        <span style="background-image: url(http://www.zhenzun168.com/images/pro/06.jpg)"></span>
-    </section>
+    <section class="item-container" data-bgimage="http://www.zhenzun168.com/images/pro/01.jpg"></section>
+    <section class="item-container" data-bgimage="http://www.zhenzun168.com/images/pro/02.jpg"></section>
+    <section class="item-container" data-bgimage="http://www.zhenzun168.com/images/pro/03.jpg"></section>
+    <section class="item-container" data-bgimage="http://www.zhenzun168.com/images/pro/04.jpg"></section>
+    <section class="item-container" data-bgimage="http://www.zhenzun168.com/images/pro/05.jpg"></section>
+    <section class="item-container" data-bgimage="http://www.zhenzun168.com/images/pro/06.jpg"></section>
 </div>
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.49511.js"></script>
+<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="js/jquery.fullscreenslideshow.min.js"></script>
 <script>
-    $(document).ready(function(){
-        $(".content").onepage_scroll({
-            sectionContainer: "section",
-            responsiveFallback: 600,
-            loop: true
+    jQuery(document).ready(function($) {
+        $('.content').fullscreenSlideshow({
+            easeInUp: 'fadeInUp',
+            easeInDown: 'fadeInDown'
         });
     });
 </script>
-
 
 </body>
 </html>
